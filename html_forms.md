@@ -12,7 +12,7 @@ A form ...
 - the `action` attribute specifies WHERE to send the form data (it specifies the URL that processes the form submission)
 - the `method` attribute specifies WHICH `HTTP` method to use (the `HTTP` method to submit the form with)
 
-## The [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) element
+## The [<input>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) element
 
 - used to create a variety of different interactive controls, including:
 
@@ -24,25 +24,25 @@ A form ...
   - text
   - time
 
-- The [type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#type) attribute specifies the type of control (`type` impacts behavior and appearance).
+- The [`type`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#type) attribute specifies the type of control (`type` impacts behavior and appearance).
 - The [`placeholder`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#placeholder) attribute specifices the text that appears when no value is set (provides a brief hint to the user as to what kind of information is expected in the field).
 - The [`name`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#name) attribute specifies a name for the input control, and the name is sumbitted along with it's value when the form data is submitted to the server. UNLESS YOU HAVE A REASON NOT TO, ALWAYS ADD THE NAME ATTRIBUTE!
 
-## The [`label`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) element
+## The [<label>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) element
 
-Associating a `<label>` with an `<input>` element offers some major advantages:
+Associating a <label> with an <input> element offers some major advantages:
 
 - a screen reader will read out the label when the user is focused on the form input, making it easier for an assistive technology user to understand what data should be entered
 - when a user clicks or touches a label, the browser passes the focus to its associated input
 
-To associate a `<label>` with an `<input>`, give the `<input>` an `id` attribute that matches the `<label>` `for` attribute.
+To associate a <label> element with an <input> element, give the <input> an `id` attribute that matches the <label> `for` attribute.
 
 ```
 <label for="username">Enter your username:</label>
 <input id="username">
 ```
 
-Alternatively, you can nest the `<input>` directly inside the `<label>`, in which case the `for` and `id` attributes are not needed because the association is implicit. THIS IS LESS COMMON.
+Alternatively, you can nest the <input> directly inside the <label>, in which case the `for` and `id` attributes are not needed because the association is implicit. THIS IS LESS COMMON.
 
 ```
 <label>Do you like peas?
@@ -50,25 +50,25 @@ Alternatively, you can nest the `<input>` directly inside the `<label>`, in whic
 </label>
 ```
 
-## HTML [`button`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element
+## HTML [<button>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) element
 
 The <button> HTML element is an interactive element that, when activated, performs a programmable action, such as submitting form data to a server or opening a dialog.
 
-**The [type](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) attribute**
+**The [`type`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) attribute**
 
-The `type` attribute sets a `<button>`'s default behavior.
+The `type` attribute sets a <button>'s default behavior.
 
-- If you have a `<button>` inside a `<form>`, the button will submit the `<form>` data to the server if (1) no value is set or (2) if the value is set to `submit`. ALWAYS SET THE VALUE!
-- If the `type` attribute value is set to 'button', the button has no default behavior when pressed.
+- If you have a <button> element inside a <form> element, the <button> will submit the <form> data to the server if (1) no value is set or (2) if the value is set to `submit`. IT'S BEST TO ALWAYS SET THE VALUE!
+- If the `type` attribute value is set to 'button', the <button> has no default behavior when pressed.
 
-**Should you use `<button>` or `<input>`?**
+**Should you use <button> or <input>?**
 
-Buttons created with the `<button>` element function just like buttons created with the IN`<input>` element, but they offer richer rendering possibilities.
+Buttons created with the <button> element function just like buttons created with the <input> element, but they offer richer rendering possibilities.
 
-- you can nest elements within a `<button>` (it can have content)
+- you can nest elements within a <button> (it can have content)
 - elements that have content, can also have pseudo elements
 
-You will see both `<input>` and `<button>` elements used professionally.
+You will see both <input> and <button> elements used professionally.
 
 ## Instructor Demo
 
@@ -136,7 +136,7 @@ For now, we're focusing on built-in form validation.
 - type: Specifies whether the data needs to be a number, an email address, or some other specific preset type.
 - [pattern](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern): Specifies a regular expression that defines a pattern the entered data needs to follow.
 
-## Validating forms using JavaScript (before server side validation takes hold)!
+## Validating forms using JavaScript
 
 You must use JavaScript if you want to take control over the look and feel of native error messages.
 
